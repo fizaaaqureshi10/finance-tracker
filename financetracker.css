@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Balance Box */
+.balance-box {
+  text-align: center;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.balance-box h2 {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.balance-box h3 {
+  font-size: 28px;
+  margin-top: 4px;
+}
+
+/* Summary */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.income, .expense {
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.income {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.expense {
+  background: #fdecea;
+  color: #c62828;
+}
+
+.income p, .expense p {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.income span, .expense span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Form */
+.form-box {
+  margin-bottom: 20px;
+}
+
+.form-box h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-box input:focus {
+  border-color: #2563eb;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 11px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #1d4ed8;
+}
+
+/* History */
+.history h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+#list {
+  list-style: none;
+}
+
+#list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  border-left: 4px solid;
+}
+
+#list li.income-item {
+  background: #e8f5e9;
+  border-color: #2e7d32;
+  color: #2e7d32;
+}
+
+#list li.expense-item {
+  background: #fdecea;
+  border-color: #c62828;
+  color: #c62828;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: inherit;
+  opacity: 0.6;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+}
